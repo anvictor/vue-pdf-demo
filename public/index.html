@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PDF Demo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="/src/app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>PDF Generator Demo</h1>
+
+      <label>Email:</label>
+      <input v-model="email" type="email" />
+
+      <br /><br />
+
+      <button @click="addRows">Додати 2 рядки</button>
+      <button @click="changeNumber">Змінити число</button>
+      <button @click="resetAll">Скинути</button>
+
+      <hr />
+
+      <table border="1">
+        <tr>
+          <th>#</th>
+          <th>Value</th>
+        </tr>
+        <tr v-for="(row, i) in table" :key="i">
+          <td>{{ i+1 }}</td>
+          <td>{{ row }}</td>
+        </tr>
+      </table>
+
+      <p>Число: {{ number }}</p>
+    </div>
+  </body>
+</html>

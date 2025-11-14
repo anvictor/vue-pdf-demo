@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+      td,
+      th {
+        border: 1px solid #333;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Автоматичний PDF-звіт</h2>
+
+    <h3>Число: {{number}}</h3>
+
+    <h3>Таблиця:</h3>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Value</th>
+      </tr>
+      {{tableRows}}
+    </table>
+  </body>
+</html>
