@@ -2,6 +2,10 @@
   "name": "vue-pdf-demo",
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "start": "npx serve public",
+    "dev": "vercel dev"
+  },
   "dependencies": {
     "puppeteer-core": "^10.1.0",
     "chrome-aws-lambda": "^10.1.0",

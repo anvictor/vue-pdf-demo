@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>PDF Demo</title>
+
+    <!-- Vue 3 CDN -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-    <script src="/src/app.js" defer></script>
+
+    <!-- Наш код -->
+    <script src="/js/app.js" defer></script>
   </head>
   <body>
     <div id="app">
       <h1>PDF Generator Demo</h1>
 
       <label>Email:</label>
-      <input v-model="email" type="email" />
+      <input v-model="email" type="email" placeholder="you@example.com" />
 
       <br /><br />
 

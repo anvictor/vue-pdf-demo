@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <style>
       body {
         font-family: Arial, sans-serif;
+        padding: 20px;
       }
       table {
         border-collapse: collapse;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 12px;
       }
-      td,
-      th {
+      th,
+      td {
         border: 1px solid #333;
-        padding: 8px;
+        padding: 6px;
+        text-align: left;
+      }
+      h2 {
+        margin: 0 0 8px 0;
       }
     </style>
   </head>
   <body>
     <h2>Автоматичний PDF-звіт</h2>
-
-    <h3>Число: {{number}}</h3>
+    <p><strong>Число:</strong> {{number}}</p>
 
     <h3>Таблиця:</h3>
     <table>
